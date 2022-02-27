@@ -1,15 +1,15 @@
 <?php
     class Database {
         //db params
-        private $host = 'localhost';
+        private $host = 'ble5mmo2o5v9oouq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
         private $db_name = 'myblog';
-        private $username = 'root';
+        private $username = 'auei9s8p213v36dk';
         private $password = '';
         private $conn;
 
         //password
         public function __construct(){
-            $this->password = getenv('myblog_pw', false);
+            $this->password = getenv('JAWSDB_PW', false);
         }
 
         //db connect
